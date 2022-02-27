@@ -1,0 +1,174 @@
+.pricing{
+    width: 100%;
+  
+    &__container{
+
+    }
+    &__header{
+        max-width: 540px;
+        margin:auto;
+        margin-bottom: 80px;
+        img{
+            width: 121px;
+            height: 120px;
+        }
+    }
+    &__row{
+        display: flex;
+        gap: 32px;
+    }
+    &__item{
+        flex:0 1 405px;
+        min-height: 513px;
+        background: rgba(19, 19, 22, 0.05);
+        border-radius: 2px;
+        
+        
+        &--black{
+            background: black;
+            
+            position: relative;
+            margin-top: -30px;
+            
+        }
+        &-content{
+            padding-top: 72px;
+            max-width: 225px;
+            margin: auto;
+            padding-left: 5px;
+            padding-right: 5px;
+            
+        }
+        &-title{
+          width: 65px;
+            margin:auto;
+            background: #131316;
+            border-radius: 1px;
+            text-align: center;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: #FFFFFF;
+            margin-bottom: 32px;
+            &--white{
+                background: white;
+                color:black;
+            }
+        }
+        &-pricing{
+            width: 88px;
+            margin:auto;
+            margin-bottom: 32px;
+          
+        }
+
+        &-dollars{
+            font-size: 20px;
+            display: inline-block;
+            margin-left: -10px;
+        }
+        &-number{
+            display: block;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 50px;
+            line-height: 50px;
+            letter-spacing: 0.1px;
+            color: #131316;
+            
+            padding:0;
+            &--white{
+                color:white;
+            }
+        }
+        &-month{
+            display: block;
+           text-align: center;
+           &--white{
+               color: white;
+           }
+        }
+        &-list{
+            margin-bottom: 32px;
+        }
+        &-itemList{
+            display: flex;
+            align-items: center;
+
+        }
+        &-itemListText{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;
+            display: flex;
+            align-items: center;
+            color: #131316;
+            &--white{
+                color:white;
+            }
+        }
+        &-imgItemList{
+            margin-right: 10px;
+        }
+
+        &-button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:auto;
+            width: 159px;
+            height: 46px;
+            border: 1px solid #131316;
+            box-sizing: border-box;
+            border-radius: 1px;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #131316;
+           cursor: pointer;
+            &--white{
+                color:black;
+                background: white;
+            }
+        }
+
+    }
+    @media (max-width:576px){
+        &__header{
+          
+            margin-bottom: 40px;
+            
+        }
+        
+        .pricing__title{
+            font-size: 32px;
+        }
+        .pricing__img-header{
+            width: 122.25px;
+            height: 120px;
+        }
+    }
+
+    @media (max-width:835px) {
+        &__row{
+            display: block;
+        }
+        &__item:not(:last-child){
+            margin-bottom: 32px;
+        }
+        &__item{
+            &--black{
+                margin-top: unset;
+            }
+        }
+    }
+}
