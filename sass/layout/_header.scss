@@ -27,12 +27,19 @@
             margin-left: 32px;
         }
         &-link{
+            display:inline-block;
+          
             font-family: Inter;
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
             line-height: calc(18px/ 16px * 100%);
             color: rgba(255, 255, 255, 0.9);
+            padding:2px 12px;
+            &:hover{
+                background: white;
+                color:black
+            }
         }
     }
 
@@ -80,8 +87,16 @@
         &__signIn{
             margin-right: 20px;
         }
+        &__menu{
+            //border:1px solid white;
+            
+            &-item:not(:first-child){
+                margin-left: 22px;
+            }
+            
+            }
     }
-    @media (max-width:868px) {
+    @media (max-width:992px) {
         &__container{
            justify-content: space-between;
         }
@@ -95,6 +110,7 @@
        &__burger{
            display: block;
        }
+       
     }
 }
 
