@@ -1,0 +1,82 @@
+.faq{
+    width:100%;
+    &__container{
+
+    }
+    &__content{
+        max-width: 768px;
+        margin:auto;
+        background:url('../img/Background.png') no-repeat;
+        padding-bottom: 400px;
+        padding-top: 50px;
+    }
+    &__title{
+      max-width: 200px;
+      margin: auto;
+        margin-bottom: 71px;
+        text-align: center;
+    }
+    &__item{
+        background: #FFFFFF;
+        border: 1px solid rgba(19, 19, 22, 0.1);
+        border-radius: 2px;
+        padding:0 30px;
+        padding-top: 20px;
+        margin-bottom: 16px;
+        &-header{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            img{
+                cursor: pointer;
+                padding:10px;
+            }
+        }
+        &-title{
+            font-family: Inter;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 28px;
+            color: #131316;
+        }
+        &-text{
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 26px;            
+            color: #595962;
+            height: 0px;
+            overflow-y: hidden;
+            max-width: 639px;
+            transition: all 300ms ease;
+            
+        }
+    }
+
+
+    @media (max-width:576px) {
+        &__content{
+            background: unset;
+        }
+        &__item{
+            padding: 0;
+            &-title{
+                font-size: 17px;
+            }
+        }
+    }
+    @media (max-width:992px) {
+        &__content{
+            padding-bottom: 40px;
+        }
+        
+    }
+}
+
+.show-text{
+    height: auto;
+   
+    overflow-y: unset;
+    //border:1px solid red;
+}

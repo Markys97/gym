@@ -1,9 +1,7 @@
 .pricing{
     width: 100%;
+    margin-bottom: 180px;
   
-    &__container{
-
-    }
     &__header{
         max-width: 540px;
         margin:auto;
@@ -142,7 +140,22 @@
         }
 
     }
+    @media (max-width:835px) {
+           margin-bottom: 120px;
+        &__row{
+            display: block;
+        }
+        &__item:not(:last-child){
+            margin-bottom: 32px;
+        }
+        &__item{
+            &--black{
+                margin-top: unset;
+            }
+        }
+    }
     @media (max-width:576px){
+        margin-bottom: 40px;
         &__header{
           
             margin-bottom: 40px;
@@ -158,17 +171,5 @@
         }
     }
 
-    @media (max-width:835px) {
-        &__row{
-            display: block;
-        }
-        &__item:not(:last-child){
-            margin-bottom: 32px;
-        }
-        &__item{
-            &--black{
-                margin-top: unset;
-            }
-        }
-    }
+    
 }

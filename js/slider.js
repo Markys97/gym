@@ -30,3 +30,31 @@ $('.program__slider').slick({
         }
     ]
   });
+
+  $('.community__slider').slick({
+    infinite: true,
+    slidesToShow:2,
+    slidesToScroll: 3,
+    centerMode: true,
+    speed: 300,
+    variableWidth: false,
+    responsive:[
+      {
+        breakpoint: 981,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          centerMode: true,
+       }
+      },
+      {
+        breakpoint: 888,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: false,
+       }
+      },
+  ]
+
+  });
