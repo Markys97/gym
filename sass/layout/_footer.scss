@@ -1,0 +1,32 @@
+.footer{
+    width: 100%;
+    background: #000;
+    &__container{
+        min-height: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__autor{
+        font-size: 20px;
+        line-height: 18px;
+
+        
+        color: #9797A2;
+    }
+    
+    @media (max-width:768px) {
+       &__container{
+            display: block;
+            text-align: center;
+            padding-top:50px;
+       }
+       &__logo{
+           margin-bottom: 10px;
+       }
+       &__autor{
+        line-height: 30px;
+       }
+
+    }
+}
