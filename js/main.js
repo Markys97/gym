@@ -30,6 +30,7 @@ let imgSrc;
 
 faqItemImgs.forEach(faqItemImg=>{
     faqItemImg.addEventListener('click',e=>{
+        console.log(e.target.dataset.open)
         imgSrc= e.target.src;
         console.log(imgSrc)
         
@@ -43,7 +44,7 @@ faqItemImgs.forEach(faqItemImg=>{
                       faqItemText.classList.add('show-text')
                   }else{
                    faqItemText.classList.remove('show-text');
-                   faqItemImg.setAttribute('src', imgSrc) 
+                   faqItemImg.setAttribute('src', e.target.dataset.open) 
                    console.log(imgSrc)
                   }
           }
